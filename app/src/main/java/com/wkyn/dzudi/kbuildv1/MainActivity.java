@@ -570,17 +570,17 @@ public class MainActivity extends AppCompatActivity
         allPlaces.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                //GenericTypeIndicator<String> t = new GenericTypeIndicator<String>() {};
-               // String stringOfPlaces = dataSnapshot.getValue(t);
-                //Type type = new TypeToken<List<Place>>() {}.getType();
-                //placesList = new Gson().fromJson(stringOfPlaces, type);
                 GenericTypeIndicator<Place> t = new GenericTypeIndicator<Place>() {};
-
                 Place place2 = new Place("");
+                placesList.clear();
                 for(DataSnapshot ds : dataSnapshot.getChildren()){
                     place2=ds.getValue(t);
                     placesList.add(place2);
                 }
+
+                typeOfObjectDropDown.setSelection(0);
+                newPlacesList = placesList;
+                searchListenerFunc();
             }
 
             @Override
