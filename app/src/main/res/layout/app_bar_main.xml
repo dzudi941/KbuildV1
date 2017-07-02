@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wkyn.dzudi.kbuildv1.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <Spinner
+                android:id="@+id/type_of_object"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+            </Spinner>
+            <Button
+                android:id="@+id/list_map_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Map View"/>
+            <!--<Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_expand"/>-->
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <!--<ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TEST"/>
+
+    </ExpandableListView>-->
+    <LinearLayout
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/search_box_layout">
+            <EditText
+                android:id="@+id/search_places_radius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/radius_m_string"
+                android:inputType="number"/>
+            <EditText
+                android:id="@+id/search_places_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/search_place_name_string"/>
+            <EditText
+                android:id="@+id/search_places_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/search_place_desc_string"/>
+
+        </LinearLayout>
+        <ToggleButton
+            android:id="@+id/search_box_show_hide"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textOff="Show advanced search"
+            android:textOn="Hide advanced search"
+            android:layout_marginTop="-5dp"
+            android:textSize="15dp"
+            android:gravity="bottom|center"/>
+
+    <ViewFlipper
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/place_for_content">
+
+        <include layout="@layout/content_main" />
+        <include layout="@layout/content_main_map" />
+
+    </ViewFlipper>
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

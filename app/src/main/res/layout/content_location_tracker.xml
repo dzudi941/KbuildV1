@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.wkyn.dzudi.kbuildv1.LocationTrackerActivity"
+    tools:showIn="@layout/activity_location_tracker">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/location_tracker_text_output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ToggleButton
+            android:id="@+id/location_tracker_service_on_off"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--<Button
+            android:id="@+id/location_tracker_start_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/location_tracker_start_service_string"/>
+        <Button
+            android:id="@+id/location_tracker_stop_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/location_tracker_stop_service_string"/>-->
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

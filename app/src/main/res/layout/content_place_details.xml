@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.wkyn.dzudi.kbuildv1.PlaceDetailsActivity"
+    tools:showIn="@layout/activity_place_details"
+    android:layout_marginLeft="8dp">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/place_details_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:textSize="24dp"
+            android:text="AAAAA"/>
+        <ImageView
+            android:id="@+id/place_details_image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/place_details_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+    </ScrollView>
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:padding="6dip" android:layout_height="?android:attr/listPreferredItemHeight">
+
+        <TextView
+            android:id="@+id/place_details_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/result_icon"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:gravity="center_vertical"
+            android:text="Title" />
+        <ImageView
+            android:id="@+id/place_details_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="6dip" />
+        <TextView
+            android:id="@+id/place_details_description"
+            android:layout_width="fill_parent"
+            android:layout_height="26dip"
+            android:layout_toRightOf="@id/result_icon"
+            android:layout_below="@id/result_name"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:text="Second line" />
+    </RelativeLayout>-->
+
+</android.support.constraint.ConstraintLayout>

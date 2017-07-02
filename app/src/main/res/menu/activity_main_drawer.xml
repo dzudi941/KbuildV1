@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_places"
+
+            android:title="Places" />
+
+
+        <item
+            android:id="@+id/nav_add_place"
+
+            android:title="Add place" />
+        <item
+            android:id="@+id/nav_connect_with_friend"
+
+            android:title="Connect with friend" />
+        <item
+            android:id="@+id/nav_location_tracking"
+
+            android:title="Start location tracking" />
+
+        <item
+            android:id="@+id/nav_show_hide_friends"
+
+            android:title="Show hide friends" />
+        <item
+            android:id="@+id/nav_user_rank"
+
+            android:title="User rang list" />
+
+    </group>
+
+    <item
+        android:id="@+id/nav_logout"
+
+        android:title="@string/nav_logout_text" />
+</menu>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.wkyn.dzudi.kbuildv1.ConnectWithFriendActivity"
+    tools:showIn="@layout/activity_connect_with_friend">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/connect_with_friend_devices_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+        <!--<Button
+            android:id="@+id/connect_with_friend_paired_devices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/connect_with_paired_devices_string"
+            android:layout_gravity="left"/>-->
+        <Button
+            android:id="@+id/connect_with_friend_search_devices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/connect_with_search_devices_string"
+            android:layout_gravity="right"/>
+        <Button
+            android:id="@+id/connect_with_friend_listen_connections"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/connect_with_friend_listen_conn_string"/>
+        <Button
+            android:id="@+id/test_uuid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Test UUID"/>
+        <ListView
+            android:id="@+id/connect_friend_list_of_friends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
